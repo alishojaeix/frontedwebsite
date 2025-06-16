@@ -8,7 +8,7 @@ A responsive and visually appealing 3D front-end website built using modern web 
 This project is a creative and interactive front-end website that combines 3D design with responsive layouts. The goal is to showcase modern front-end development skills through engaging visuals and smooth interactions.
 
 ## 📸 Live Preview
-![Uploading hgf.png…]()
+
 
 
 <!-- Add your live demo or screenshot if available -->
