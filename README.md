@@ -9,10 +9,8 @@ This project is a creative and interactive front-end website that combines 3D de
 
 ## 📸 Live Preview
 
-
-
 <!-- Add your live demo or screenshot if available -->
-[👉 View Live Demo]([https://your-live-demo-link.com](https://alishojaeix.github.io/frontedwebsite/))
+[👉 View Live Demo]([https://alishojaeix.github.io/frontedwebsite/]
 
 ## 🛠️ Technologies Used
 
