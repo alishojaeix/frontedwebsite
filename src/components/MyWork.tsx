@@ -2,12 +2,12 @@ import React from 'react';
 
 const MyWork: React.FC = () => {
   const placeholderImages = [
-    'src/img/screenshot (2).png',
-    'src/img/screenshot (3).png',
-    'src/img/screenshot (4).png',
-    'src/img/screenshot (5).png',
-    'src/img/screenshot (6).png',
-    'src/img/screenshot.png',
+    '/img/screenshot (2).png', // تغییر مسیر به صورت عمومی
+    '/img/screenshot (3).png',
+    '/img/screenshot (4).png',
+    '/img/screenshot (5).png',
+    '/img/screenshot (6).png',
+    '/img/screenshot.png',
   ];
 
   return (
@@ -25,6 +25,7 @@ const MyWork: React.FC = () => {
                 src={src}
                 alt={`Portfolio sample ${index + 1}`}
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                loading="lazy" // اضافه کردن lazy loading
               />
             </div>
           ))}

@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" const className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* پس‌زمینه گرادیان */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-orange-900/10 z-0" />
       
@@ -34,19 +34,19 @@ const Hero: React.FC = () => {
               <button className="btn-primary px-6 py-3 rounded-full">
                 View My Work
               </button>
-              <button className="btn-secondary px-6 py-3 rounded-full ">
-                Download CV
+              <button className="btn-secondary px-6 py-3 rounded-full">
+                <a href="/CV.pdf" download="My-Resume.pdf">Download CV</a>
               </button>
             </div>
 
             <div className="flex justify-center lg:justify-start gap-6">
-              <a href="https://github.com/alishojaeix" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
+              <a href="https://github.com/alishojaeix" target="_blank" rel="noopener noreferrer" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com/alishojaeix" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
+              <a href="https://linkedin.com/alishojaeix" target="_blank" rel="noopener noreferrer" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="alishojaei1999x@gmail.com" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
+              <a href="mailto:alishojaei1999x@gmail.com" className="social-link p-3 glass rounded-full hover:scale-110 transition-transform">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           {/* بخش تصویر - در موبایل پایین می‌آید */}
           <div className="order-2 lg:order-none flex justify-center">
             <img
-              src="src/img/20241220_201009.jpg"
+              src="/img/20241220_201009.jpg"
               alt="Developer"
               className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-neon-blue shadow-xl hover:shadow-xl animate-float hover:animate-pulse
                 transition-all duration-500
