@@ -1,3 +1,4 @@
+<img width="957" height="439" alt="hero section" src="https://github.com/user-attachments/assets/38e65080-24a2-4fdc-a3c7-2e230c4620be" />
 
 # 🌐 FrontedWebsite
 
