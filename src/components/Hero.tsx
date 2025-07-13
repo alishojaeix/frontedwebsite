@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                 View My Work
               </button>
               <button className="btn-secondary px-6 py-3 rounded-full">
-                <a href="/CV.pdf" download="My-Resume.pdf" className="block w-full h-full">
+                <a href='/public/CV.pdf' download="My-Resume.pdf" className="block w-full h-full">
                   Download CV  
                 </a>
               </button>
