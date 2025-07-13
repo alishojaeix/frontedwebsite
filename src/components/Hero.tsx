@@ -10,14 +10,14 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" const className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* پس‌زمینه گرادیان */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-orange-900/10 z-0" />
       
-      {/* محتوای اصلی */}
+      {/* Main content */}
       <div className="container mx-auto px-4 py-12 lg:py-24 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* بخش متن - همیشه اول نمایش داده می‌شود */}
+          {/* Text section */}
           <div className="order-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               <span className="text-gradient">Frontend</span>
@@ -35,7 +35,9 @@ const Hero: React.FC = () => {
                 View My Work
               </button>
               <button className="btn-secondary px-6 py-3 rounded-full">
-                <a href="/CV.pdf" download="My-Resume.pdf">Download CV</a>
+                <a href="/CV.pdf" download="My-Resume.pdf" className="block w-full h-full">
+                  Download CV
+                </a>
               </button>
             </div>
 
@@ -52,7 +54,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* بخش تصویر - در موبایل پایین می‌آید */}
+          {/* Image section */}
           <div className="order-2 lg:order-none flex justify-center">
             <img
               src="/img/20241220_201009.jpg"
@@ -66,10 +68,11 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* دکمه اسکرول */}
+      {/* Scroll button */}
       <button
         onClick={scrollToNext}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20"
+        aria-label="Scroll to next section"
       >
         <ArrowDown className="w-8 h-8 text-neon-blue hover:text-neon-orange transition-colors" />
       </button>
